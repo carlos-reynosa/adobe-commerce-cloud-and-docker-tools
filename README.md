@@ -79,13 +79,13 @@ Here's a blank template to get started: To avoid retyping too much info. Do a se
 ### Built With and inspired by
 
 * [kvz/bash3boilerplate](https://github.com/kvz/bash3boilerplate)
-    - Framework for created sturdy bash shell scripts
+    - This project provided templates for creating bash scripts that provided argument parsing and validation, debugging, and logging .
 * [markshust/docker-magento](https://github.com/markshust/docker-magento) 
-    - Utilized structure of scripts and project as well utilized direct code from  some of the scripts. 
+    - This provided inspiration for how to structure much of the code. I also utilized some scripts directly from within this project. 
 * [tlatsas/bash-spinner](https://github.com/tlatsas/bash-spinner)
-    - Script for creating a spinner while loop is running. This whas needed in order to show during project initialization that a source database was imported. 
+    - This project provided for an easy way to display a spinner to the user during script execution. This was needed in order to show during project initialization that a source database was imported. 
 * [jasperes/bash-yaml](https://github.com/jasperes/bash-yaml)
-    - Scripts for reading a using yaml files in bash. This script helped establish the general project configuration at project.ini.dist
+    - This project provided an easy way to work with yaml within bash scripts. This script helped establish the general project configuration at project.ini.dist
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
