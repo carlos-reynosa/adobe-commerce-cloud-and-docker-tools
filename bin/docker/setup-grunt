@@ -1,0 +1,50 @@
+#!/bin/bash
+
+# Script to setup grunt static asset compiling for themes
+
+source ./bin/lib/ini_val.sh
+
+DEFAULT_THEME_ID="select value from core_config_data where path = 'design/theme/theme_id'"
+THEME_PATH="select theme_path from theme where theme_id in ($DEFAULT_THEME_ID);"
+VENDOR_THEME=$(ini_val ./project.ini default.VENDOR_THEME_PACKAGE_NAME)
+THEME=$(ini_val ./project.ini default.THEME_NAME)
+LOCALE_CODE=$(bin/docker/magento config:show general/locale/code | cut -d$'\r' -f1 | sed 's/ *$//g')
+
+
+
+# Generate local-theme.js for custom theme
+read -r -d '' GEN_THEME_JS << EOM
+var fs = require('fs');
+var util = require('util');
+var theme = require('./dev/tools/grunt/configs/themes');
+theme['$THEME'] = {
+    area: 'frontend',
+    name: '$VENDOR_THEME',
+    locale: '$LOCALE_CODE',
+    files: [
+        'css/styles-m',
+        'css/styles-l'
+    ],
+    dsl: 'less'
+};
+fs.writeFileSync('./dev/tools/grunt/configs/local-themes.js', '"use strict"; module.exports = ' + util.inspect(theme), 'utf-8');
+EOM
+
+if [ -z "$VENDOR_THEME" ] || [ -z "$THEME" ]; then
+    echo "Using Magento/luma theme for grunt config"
+    THEME=luma
+     cp ./dev/tools/grunt/configs/themes.js ./dev/tools/grunt/configs/local-themes.js
+else
+    echo "Using $VENDOR_THEME theme for grunt config"
+    bin/docker/node -e "$GEN_THEME_JS"
+fi
+CONFIG_SOURCE_DIR_NAME=$(ini_val ./project.ini default.SOURCE_DIRECTORY_NAME)
+
+cp ${CONFIG_SOURCE_DIR_NAME}/package.json.sample ${CONFIG_SOURCE_DIR_NAME}/package.json
+cp ${CONFIG_SOURCE_DIR_NAME}/Gruntfile.js.sample ${CONFIG_SOURCE_DIR_NAME}/Gruntfile.js
+cp ${CONFIG_SOURCE_DIR_NAME}/grunt-config.json.sample ${CONFIG_SOURCE_DIR_NAME}/grunt-config.json
+bin/docker/npm install
+bin/docker/magento cache:clean
+bin/docker/grunt clean
+bin/docker/grunt exec:$THEME
+bin/docker/grunt less:$THEME

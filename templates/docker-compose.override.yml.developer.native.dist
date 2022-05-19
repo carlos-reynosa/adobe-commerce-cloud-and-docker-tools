@@ -1,0 +1,8 @@
+version: '2.1'
+services:
+  db:
+    ports:
+      - '3306:3306'
+  fpm:
+      volumes:
+          - './php-custom.ini:/usr/local/etc/php/conf.d/php-custom.ini'

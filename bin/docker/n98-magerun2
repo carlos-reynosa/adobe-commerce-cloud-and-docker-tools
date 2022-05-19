@@ -1,0 +1,8 @@
+#!/bin/bash
+if ! bin/docker/clinotty ls bin/n98-magerun2.phar 1> /dev/null 2>&1; then
+    bin/docker/clinotty curl -O https://files.magerun.net/n98-magerun2.phar
+    bin/docker/clinotty chmod +x n98-magerun2.phar
+    bin/docker/clinotty mkdir -p bin
+    bin/docker/clinotty mv n98-magerun2.phar bin/n98-magerun2.phar
+fi
+bin/docker/cli bin/n98-magerun2.phar "$@"

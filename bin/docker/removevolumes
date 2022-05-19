@@ -1,0 +1,6 @@
+#!/bin/bash
+source ./bin/lib/ini_val.sh
+CONFIG_SOURCE_DIR_NAME=$(ini_val ./project.ini default.SOURCE_DIRECTORY_NAME)
+cd ${CONFIG_SOURCE_DIR_NAME}
+docker-compose down -v   --remove-orphans
+

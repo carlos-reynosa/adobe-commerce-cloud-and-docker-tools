@@ -1,0 +1,5 @@
+version: '2'
+services:
+  varnish:
+    environment:
+      - VIRTUAL_HOST=magento2.docker
