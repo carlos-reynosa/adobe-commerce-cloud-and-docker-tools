@@ -24,7 +24,7 @@
 <h3 align="center">Adobe Commerce Cloud Tools</h3>
 
   <p align="center">
-    project_description
+    This project contains scripts and configurations for making it easier to work with Adobe's Commerce Cloud servers and Magento docker local environments. 
     <br />
     <a href="https://github.com/carlos-reynosa/adobe-commerce-cloud-tools"><strong>Explore the docs »</strong></a>
     <br />
@@ -70,7 +70,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `carlos-reynosa`, `adobe-commerce-cloud-tools`, `carlos_reynosa`, `carlosrn`, `email_client`, `email`, `Adobe Commerce Cloud Tools`, `project_description`
+Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `carlos-reynosa`, `adobe-commerce-cloud-tools`, `carlos_reynosa`, `carlosrn`, `email_client`, `email`, `Adobe Commerce Cloud Tools`, `This project contains scripts and configurations for making it easier to work with Adobe's Commerce Cloud servers and Magento docker local environments. `
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
