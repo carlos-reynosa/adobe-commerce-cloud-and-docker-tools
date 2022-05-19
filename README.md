@@ -20,9 +20,6 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/carlos-reynosa/adobe-commerce-cloud-tools">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
-  </a>
 
 <h3 align="center">Adobe Commerce Cloud Tools</h3>
 
@@ -72,8 +69,6 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
 
 Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `carlos-reynosa`, `adobe-commerce-cloud-tools`, `carlos_reynosa`, `carlosrn`, `email_client`, `email`, `Adobe Commerce Cloud Tools`, `project_description`
 
