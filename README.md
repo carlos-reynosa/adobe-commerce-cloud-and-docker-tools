@@ -70,7 +70,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `carlos-reynosa`, `adobe-commerce-cloud-tools`, `carlos_reynosa`, `carlosrn`, `email_client`, `email`, `Adobe Commerce Cloud and Docker Tools`, `This project contains scripts and configurations for making it easier to work with Adobe's Commerce Cloud servers and Magento docker local environments. `
+Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `carlos-reynosa`, `adobe-commerce-cloud-tools`, `carlos_reynosa`, `carlosrn`,  `email`, `Adobe Commerce Cloud and Docker Tools`, `This project contains scripts and configurations for making it easier to work with Adobe's Commerce Cloud servers and Magento docker local environments. `
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -180,7 +180,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@carlos_reynosa](https://twitter.com/carlos_reynosa) - email@email_client.com
+Your Name - [@carlos_reynosa](https://twitter.com/carlos_reynosa) 
 
 Project Link: [https://github.com/carlos-reynosa/adobe-commerce-cloud-tools](https://github.com/carlos-reynosa/adobe-commerce-cloud-tools)
 
