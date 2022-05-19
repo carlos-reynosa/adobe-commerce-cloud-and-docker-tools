@@ -139,11 +139,6 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 <!-- ROADMAP -->
 ## Roadmap
 
-- [ ] Feature 1
-- [ ] Feature 2
-- [ ] Feature 3
-    - [ ] Nested Feature
-
 See the [open issues](https://github.com/carlos-reynosa/adobe-commerce-cloud-tools/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#top">back to top</a>)</p>
@@ -180,7 +175,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@carlos_reynosa](https://twitter.com/carlos_reynosa) 
+Carlos Reynosa - [@carlos_reynosa](https://twitter.com/carlos_reynosa) 
 
 Project Link: [https://github.com/carlos-reynosa/adobe-commerce-cloud-tools](https://github.com/carlos-reynosa/adobe-commerce-cloud-tools)
 
