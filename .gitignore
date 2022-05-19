@@ -3,3 +3,4 @@
 !/bin
 !/templates
 !.gitignore
+!CHANGELOG.md
