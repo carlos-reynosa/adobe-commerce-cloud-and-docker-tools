@@ -76,16 +76,16 @@ Here's a blank template to get started: To avoid retyping too much info. Do a se
 
 
 
-### Built With
+### Built With and inspired by
 
-* [Next.js](https://nextjs.org/)
-* [React.js](https://reactjs.org/)
-* [Vue.js](https://vuejs.org/)
-* [Angular](https://angular.io/)
-* [Svelte](https://svelte.dev/)
-* [Laravel](https://laravel.com)
-* [Bootstrap](https://getbootstrap.com)
-* [JQuery](https://jquery.com)
+* [kvz/bash3boilerplate](https://github.com/kvz/bash3boilerplate)
+    - Framework for created sturdy bash shell scripts
+* [markshust/docker-magento](https://github.com/markshust/docker-magento) 
+    - Utilized structure of scripts and project as well utilized direct code from  some of the scripts. 
+* [tlatsas/bash-spinner](https://github.com/tlatsas/bash-spinner)
+    - Script for creating a spinner while loop is running. This whas needed in order to show during project initialization that a source database was imported. 
+* [jasperes/bash-yaml](https://github.com/jasperes/bash-yaml)
+    - Scripts for reading a using yaml files in bash. This script helped establish the general project configuration at project.ini.dist
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
