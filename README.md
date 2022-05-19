@@ -1,4 +1,5 @@
 <div id="top"></div>
+
 <!-- PROJECT SHIELDS -->
 <!--
 *** I'm using markdown "reference style" links for readability.
@@ -23,7 +24,7 @@
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-<h3 align="center">Carlos's Adobe Commerce Cloud Tools</h3>
+<h3 align="center">Adobe Commerce Cloud Tools</h3>
 
   <p align="center">
     project_description
@@ -74,7 +75,7 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `carlos-reynosa`, `adobe-commerce-cloud-tools`, `carlos_reynosa`, `carlosrn`, `email_client`, `email`, `project_title`, `project_description`
+Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `carlos-reynosa`, `adobe-commerce-cloud-tools`, `carlos_reynosa`, `carlosrn`, `email_client`, `email`, `Adobe Commerce Cloud Tools`, `project_description`
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
