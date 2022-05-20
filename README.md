@@ -26,14 +26,14 @@
   <p align="center">
     This project contains scripts and configurations for making it easier to work with Adobe's Commerce Cloud servers and Magento docker local environments. 
     <br />
-    <a href="https://github.com/carlos-reynosa/adobe-commerce-cloud-tools"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/carlos-reynosa/adobe-commerce-cloud-and-docker-tools"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/carlos-reynosa/adobe-commerce-cloud-tools">View Demo</a>
+    <a href="https://github.com/carlos-reynosa/adobe-commerce-cloud-and-docker-tools">View Demo</a>
     ·
-    <a href="https://github.com/carlos-reynosa/adobe-commerce-cloud-tools/issues">Report Bug</a>
+    <a href="https://github.com/carlos-reynosa/adobe-commerce-cloud-and-docker-tools/issues">Report Bug</a>
     ·
-    <a href="https://github.com/carlos-reynosa/adobe-commerce-cloud-tools/issues">Request Feature</a>
+    <a href="https://github.com/carlos-reynosa/adobe-commerce-cloud-and-docker-tools/issues">Request Feature</a>
   </p>
 </div>
 
@@ -70,7 +70,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `carlos-reynosa`, `adobe-commerce-cloud-tools`, `carlos_reynosa`, `carlosrn`,  `email`, `Adobe Commerce Cloud and Docker Tools`, `This project contains scripts and configurations for making it easier to work with Adobe's Commerce Cloud servers and Magento docker local environments. `
+Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `carlos-reynosa`, `adobe-commerce-cloud-and-docker-tools`, `carlos_reynosa`, `carlosrn`,  `email`, `Adobe Commerce Cloud and Docker Tools`, `This project contains scripts and configurations for making it easier to work with Adobe's Commerce Cloud servers and Magento docker local environments. `
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -110,7 +110,7 @@ This is an example of how to list things you need to use the software and how to
 1. Get a free API Key at [https://example.com](https://example.com)
 2. Clone the repo
    ```sh
-   git clone https://github.com/carlos-reynosa/adobe-commerce-cloud-tools.git
+   git clone https://github.com/carlos-reynosa/adobe-commerce-cloud-and-docker-tools.git
    ```
 3. Install NPM packages
    ```sh
@@ -139,7 +139,7 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 <!-- ROADMAP -->
 ## Roadmap
 
-See the [open issues](https://github.com/carlos-reynosa/adobe-commerce-cloud-tools/issues) for a full list of proposed features (and known issues).
+See the [open issues](https://github.com/carlos-reynosa/adobe-commerce-cloud-and-docker-tools/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -177,7 +177,7 @@ Distributed under the GNU General Public License v3.0. See `LICENSE.txt` for mor
 
 Carlos Reynosa - [@carlos_reynosa](https://twitter.com/carlos_reynosa) 
 
-Project Link: [https://github.com/carlos-reynosa/adobe-commerce-cloud-tools](https://github.com/carlos-reynosa/adobe-commerce-cloud-tools)
+Project Link: [https://github.com/carlos-reynosa/adobe-commerce-cloud-and-docker-tools](https://github.com/carlos-reynosa/adobe-commerce-cloud-and-docker-tools)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -196,16 +196,16 @@ Project Link: [https://github.com/carlos-reynosa/adobe-commerce-cloud-tools](htt
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/carlos-reynosa/adobe-commerce-cloud-tools.svg?style=for-the-badge
-[contributors-url]: https://github.com/carlos-reynosa/adobe-commerce-cloud-tools/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/carlos-reynosa/adobe-commerce-cloud-tools.svg?style=for-the-badge
-[forks-url]: https://github.com/carlos-reynosa/adobe-commerce-cloud-tools/network/members
-[stars-shield]: https://img.shields.io/github/stars/carlos-reynosa/adobe-commerce-cloud-tools.svg?style=for-the-badge
-[stars-url]: https://github.com/carlos-reynosa/adobe-commerce-cloud-tools/stargazers
-[issues-shield]: https://img.shields.io/github/issues/carlos-reynosa/adobe-commerce-cloud-tools.svg?style=for-the-badge
-[issues-url]: https://github.com/carlos-reynosa/adobe-commerce-cloud-tools/issues
-[license-shield]: https://img.shields.io/github/license/carlos-reynosa/adobe-commerce-cloud-tools.svg?style=for-the-badge
-[license-url]: https://github.com/carlos-reynosa/adobe-commerce-cloud-tools/blob/master/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/carlos-reynosa/adobe-commerce-cloud-and-docker-tools.svg?style=for-the-badge
+[contributors-url]: https://github.com/carlos-reynosa/adobe-commerce-cloud-and-docker-tools/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/carlos-reynosa/adobe-commerce-cloud-and-docker-tools.svg?style=for-the-badge
+[forks-url]: https://github.com/carlos-reynosa/adobe-commerce-cloud-and-docker-tools/network/members
+[stars-shield]: https://img.shields.io/github/stars/carlos-reynosa/adobe-commerce-cloud-and-docker-tools.svg?style=for-the-badge
+[stars-url]: https://github.com/carlos-reynosa/adobe-commerce-cloud-and-docker-tools/stargazers
+[issues-shield]: https://img.shields.io/github/issues/carlos-reynosa/adobe-commerce-cloud-and-docker-tools.svg?style=for-the-badge
+[issues-url]: https://github.com/carlos-reynosa/adobe-commerce-cloud-and-docker-tools/issues
+[license-shield]: https://img.shields.io/github/license/carlos-reynosa/adobe-commerce-cloud-and-docker-tools.svg?style=for-the-badge
+[license-url]: https://github.com/carlos-reynosa/adobe-commerce-cloud-and-docker-tools/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/carlosrn
 [product-screenshot]: images/screenshot.png
