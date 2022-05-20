@@ -116,36 +116,48 @@ This project is a combination of tools and scripts for working with [Magento/Ado
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
-
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
+The requirements for configuring the project will vary depending on if you just want to work with remote Magento Cloud
+environments or if your also trying to create a local Magento Docker environment based on a Magento Cloud environment. 
 
 ### Installation
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
+1. Clone the repo
    ```sh
    git clone https://github.com/carlos-reynosa/adobe-commerce-cloud-and-docker-tools.git
    ```
-3. Install NPM packages
+2. Setup the project configuration file by providing values to connect to the remote Magento Commerce Cloud Project and code
    ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
+   cp project.ini.dist project.ini
    ```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
+### project.ini Project Configuration Variables
+
+#### SOURCE_DIRECTORY_NAME
+- Direction in which the main project code will exist. Example: app
+
+#### PROJECT_ID
+- Magento Commerce Project ID used to identify your particular  Commerce Cloud project when establishing a connection
+
+#### CLOUD_VARIABLE_NAME_FORCE_REDEPLOY
+- Custom cloud variable name used to  force a redeployment within an environment and that will also skip cache
+
+#### DEFAULT_LOCAL_HOST
+- Local host domain used for accessing the local docker development environment. Example test.m2.test
+
+#### PRIMARY_GIT_REPO_URL
+- Non Magento Commerce Cloud repo used for managing and storing the application code. This is for use when the Commerce Cloud git repo is only used for publishing changes.
+
+#### MAGENTO_GIT_REPO_URL
+- Magento Commerce Cloud git repo URL used for publishing application code into an environment
+
+#### VENDOR_THEME_PACKAGE_NAME
+- Vendor package name in the form of vendor/package used for configuring grunt static file generation 
+
+#### THEME_NAME
+- Theme name used for local theme development and static file generation with grunt.  
 
 <!-- USAGE EXAMPLES -->
 ## Usage
