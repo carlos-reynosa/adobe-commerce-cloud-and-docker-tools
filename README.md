@@ -83,6 +83,8 @@ This project is a combination of tools and scripts for working with [Magento/Ado
 - Replicate and import the database from one environment into another environment 
 - Create a db dump export on a remote environment for development  
 - Download a copy of the app/etc/env.php file from a given environment 
+- Create a remote db backup of a given environment and store it locally
+- Create a remote media backup of a given environment and store it locally
 
 ### Magento Cloud Docker
 - Initialize a local Magento Cloud Docker environment that's an exact replica, including database and images, of a remote Magento Cloud Commerce environment
