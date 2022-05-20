@@ -70,7 +70,27 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `carlos-reynosa`, `adobe-commerce-cloud-and-docker-tools`, `carlos_reynosa`, `carlosrn`,  `email`, `Adobe Commerce Cloud and Docker Tools`, `This project contains scripts and configurations for making it easier to work with Adobe's Commerce Cloud servers and Magento docker local environments. `
+This project is a combination of tools and scripts for working with [Magento/Adobe Cloud Commerce](https://github.com/magento/magento-cloud) server environments and the [Magento Cloud Docker](https://github.com/magento/magento-cloud-docker) project for local development. The project contains helpful tools for doing the following in each environment:
+
+### Magento Cloud Commerce
+- Replicating an environment into another environment. For example, you may want to setup staging with the latest images and data from production in order to test a new feature. Magento Cloud currently does not have an easy way of doing this, developers must create there own scripts to accomplish this. 
+- Flush the cash on a given environment
+- Fully reindex a given environment
+- Download the database from a local environment
+- Get the latest configuration dump from a given environment
+- Run the bin/magento command on a given environment
+- Sync only images from one environment into another environment
+- Replicate and import the database from one environment into another environment 
+- Create a db dump export on a remote environment for development  
+- Download a copy of the app/etc/env.php file from a given environment 
+
+### Magento Cloud Docker
+- Initialize a local Magento Cloud Docker environment that's an exact replica, including database and images, of a remote Magento Cloud Commerce environment
+- Run the deployment process on a local Magento Cloud Docker environment
+- Run validation tests on your local environment to ensure that it has the correct tools and files to sucessuflly set up a local Magento Cloud Docker environment
+- Run the composer command on the local Magento Cloud Docker environment
+- Run the magento command on the local Magento Cloud Docker environment
+- Run through the Magento Cloud Docker configuration build process using defaults 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
