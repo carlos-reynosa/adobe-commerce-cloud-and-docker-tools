@@ -127,10 +127,9 @@ time. This project has only been tested within linux environments.
    ```sh
    cp project.ini.dist project.ini
    ```
-3. Make sure you have a file in this project directory ./project.ini that contains all your cloud and local development values 
-4. Install the magento-cloud client tool using [the instructions on their website](https://devdocs.magento.com/cloud/reference/cli-ref-topic.html). 
-5. Make sure you have docker installed within your local environment according to [Adobe's instructions on their website](https://devdocs.magento.com/cloud/docker/docker-development.html). 
-6. Run the local environment validation script to check if you have the project set up for working with Magento Cloud and the Magento Docker project locally. 
+3. Install the magento-cloud client tool using [the instructions on their website](https://devdocs.magento.com/cloud/reference/cli-ref-topic.html). 
+4. Make sure you have docker installed within your local environment according to [Adobe's instructions on their website](https://devdocs.magento.com/cloud/docker/docker-development.html). 
+5. Run the local environment validation script to check if you have the project set up for working with Magento Cloud and the Magento Docker project locally. 
    - ```bin/docker/local-environment/validation-test```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
