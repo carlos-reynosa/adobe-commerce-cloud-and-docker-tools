@@ -440,6 +440,7 @@ info "Done generating latest config.php file on ${environment}"
 rm -rf ${CONFIG_SOURCE_DIR_NAME}/app/etc/config.php && info "Removed existing config.php"
 
 info "Downloading config.php from ${environment} to local ${CONFIG_SOURCE_DIR_NAME}/app/etc/config.php"
+mkdir -p ${CONFIG_SOURCE_DIR_NAME}/app/etc
 magento-cloud ssh ${projectOption} ${environmentOption} "cat app/etc/config.php" > ${CONFIG_SOURCE_DIR_NAME}/app/etc/config.php
 
 notice "Done syncing up local config.php configuration with ${environment}"
