@@ -74,11 +74,6 @@ This project is a combination of tools and scripts for working with [Magento/Ado
 
 ### Magento Cloud Commerce
 - Replicating an environment into another environment. For example, you may want to setup staging with the latest images and data from production in order to test a new feature. Magento Cloud currently does not have an easy way of doing this, developers must create there own scripts to accomplish this. 
-    - Data
-      - Reinitialize the staging environment with data from source environment production
-        - ```bin/sync-environment-db -e staging -s production```
-      - Reinitialize the feature-a environment branch with data from feature-b source environment branch
-          - ```bin/sync-environment-db -e feature-a -s feature-b-environment-branch```
 - Flush the cash on a given environment
 - Fully reindex a given environment
 - Download the database from a local environment
