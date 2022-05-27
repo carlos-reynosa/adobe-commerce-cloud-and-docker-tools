@@ -92,7 +92,6 @@ This project is a combination of tools and scripts for working with [Magento/Ado
 - Run validation tests on your local environment to ensure that it has the correct tools and files to sucessuflly set up a local Magento Cloud Docker environment
 - Run the composer command on the local Magento Cloud Docker environment
 - Run the magento command on the local Magento Cloud Docker environment
-- Run through the Magento Cloud Docker configuration build process using defaults 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -205,6 +204,24 @@ environments or if your also trying to create a local Magento Docker environment
 12. Create a remote media backup of a given environment and store it locally
     - Example: Create a full backup archive of the media files in staging and store them locally within the project var directory for the environment
       - ```bin/cloud/backup/backup-media -e integration``` 
+
+### Magento Cloud Docker Management Features
+1. Initialize a local Magento Cloud Docker environment that's an exact replica, including database and images, of a remote Magento Cloud Commerce environment
+      - Example: Initialize a local docker environment based off of staging  for development. Use a fresh db dump form the environment by passing the "-p" flag. 
+        - ```bin/docker/init-local-environment -e staging -p```
+      - Example: Initialize a local docker environment based off of staging  for development. Omit the "-p" flag in order to used the last used db dump from the environment. 
+        - ```bin/docker/init-local-environment -e staging```
+2. Run the deployment process on a local Magento Cloud Docker environment according to [Magento Docker Deployment Modes processes](https://devdocs.magento.com/cloud/docker/docker-launch.html)
+    - Example: Run the developer deploy process on the currently running Magento Cloud Docker Project
+      - ```bin/docker/deploy -m developer```
+3. Run validation tests on your local environment to ensure that it has the correct tools and files to successfully set up a local Magento Cloud Docker environment
+   - ```bin/docker/local-environment-validation-test```
+4. Run the composer command on the local Magento Cloud Docker environment
+   - Example: Run composer to install the project code's vendor directory and dependency 
+     - ```bin/docker/composer install```
+5. Run the magento command on the local Magento Cloud Docker environment
+   - Example: Run the magento setup upgrade command on the current local docker application instance
+     - ```bin/docker/magento setup:upgrade```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
