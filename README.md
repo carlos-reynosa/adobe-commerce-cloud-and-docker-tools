@@ -74,6 +74,11 @@ This project is a combination of tools and scripts for working with [Magento/Ado
 
 ### Magento Cloud Commerce
 - Replicating an environment into another environment. For example, you may want to setup staging with the latest images and data from production in order to test a new feature. Magento Cloud currently does not have an easy way of doing this, developers must create there own scripts to accomplish this. 
+    - Data
+      - Reinitialize the staging environment with data from source environment production
+        - ```bin/sync-environment-db -e staging -s production```
+      - Reinitialize the feature-a environment branch with data from feature-b source environment branch
+          - ```bin/sync-environment-db -e feature-a -s feature-b-environment-branch```
 - Flush the cash on a given environment
 - Fully reindex a given environment
 - Download the database from a local environment
@@ -162,9 +167,49 @@ environments or if your also trying to create a local Magento Docker environment
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
+### Cloud Environment Management Features
+1. Replicate and import the database from one environment into another environment
+    - Example: Reinitialize the staging environment with data from source environment production
+        - ```bin/cloud/sync-environment-db -e staging -s production```
+    - Example: Reinitialize the feature-a environment branch with data from feature-b source environment branch
+        - ```bin/cloud/sync-environment-db -e feature-a -s feature-b-environment-branch```
+2. Sync media from one environment into another environment
+    - Example: Grab the latest media files from production into staging
+        - ```bin/cloud/sync-environment-media -e staging -s production```
+3. Replicating an environment into another environment. For example, you may want to setup staging with the latest images and data from production in order to test a new feature. Magento Cloud currently does not have an easy way of doing this, developers must create there own scripts to accomplish this.
+    - Example: Reinitialize the staging environment with data from source environment production
+        - ```bin/cloud/sync-environment-db -e staging -s production```
+    - Example: Reinitialize the feature-a environment branch with data from feature-b source environment branch
+        - ```bin/cloud/sync-environment-db -e feature-a -s feature-b-environment-branch```
+4. Flush the cash on a given environment
+      - Example: Flush the cache on integration 
+        - ```bin/cloud/cashe-flush -e integration```
+      - Example: Flush the cache on integration branch feature-a-integration-branch
+        - ```bin/cloud/cashe-flush -e feature-a-integration-branch```
+5. Fully reindex an environment
+    - Example: Reindex integration  
+      - ```bin/cloud/full-reindex -e integration```
+6. Run the magento command on a given environment
+    - Example: List available magento commands within integration
+      - ```bin/cloud/magento -e integration -a 'list'``` 
+7. Create a db dump on an environment and store it within it's file directory  at /tmp
+    - Example: Create a db dump for development on integration 
+      - ```bin/cloud/create-remote-sync-db-dump -e integration```
+8. Download the database from an environment into your docker project configuration for initialization
+    - Example: Get a db dump from integration and place it in the local project docker directory for docker initialization import  at .docker/mysql/docker-entrypoint-initdb.d/
+      - ```bin/cloud/get-db-for-docker -e integration```
+9. Get the latest configuration dump from a given environment
+   - Example: Grab the application configuration dump from staging and store it in the local project
+     - ```bin/cloud/get-latest-config - e staging```
+10. Download a copy of the app/etc/env.php file from a given environment
+    - Example: Grab the environment configuration file from integration branch feature-branch-a and place it in the local project
+       - ```bin/cloud/get-env-file -e feature-branch-a```
+11. Create a remote db backup of a given environment and store it locally
+    - Example: Create a full backup of production and store it locally within the var directory of the current project
+      - ```bin/cloud/backup/backup-db -e production```
+- Create a remote media backup of a given environment and store it locally
+    - Example: Create a full backup archive of the media files in staging and store them locally within the project var directory for the environment
+      -```bin/cloud/backup/backup-media -e integration``` 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
