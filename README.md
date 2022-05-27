@@ -222,7 +222,18 @@ environments or if your also trying to create a local Magento Docker environment
 5. Run the magento command on the local Magento Cloud Docker environment
    - Example: Run the magento setup upgrade command on the current local docker application instance
      - ```bin/docker/magento setup:upgrade```
-
+6. Start up the docker project containers
+   - ```bin/docker/start```
+7. Stop and removal all currently running docker containers and data
+   - ```bin/docker/removeall```
+8. Setup the local grunt configuratino for local theme development of a particular theme defined within the project.ini configuration  
+   - ```bin/docker/setup-grunt```
+9. Get the Magento project code referenced within repo PRIMARY_GIT_REPO_URL and place it within the local project directory at SOURCE_DIRECTORY_NAME
+    - ```bin/docker/get-core-code```
+10. Run the grunt command for the local docker project in order to build a theme
+    - ```bin/docker/grunt exec:my-theme```
+    - ```bin/docker/grunt less:my-theme```
+    
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
