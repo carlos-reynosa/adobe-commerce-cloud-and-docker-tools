@@ -207,9 +207,9 @@ environments or if your also trying to create a local Magento Docker environment
 11. Create a remote db backup of a given environment and store it locally
     - Example: Create a full backup of production and store it locally within the var directory of the current project
       - ```bin/cloud/backup/backup-db -e production```
-- Create a remote media backup of a given environment and store it locally
+12. Create a remote media backup of a given environment and store it locally
     - Example: Create a full backup archive of the media files in staging and store them locally within the project var directory for the environment
-      -```bin/cloud/backup/backup-media -e integration``` 
+      - ```bin/cloud/backup/backup-media -e integration``` 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
