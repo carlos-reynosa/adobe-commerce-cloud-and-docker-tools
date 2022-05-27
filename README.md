@@ -24,13 +24,11 @@
 <h3 align="center">Adobe Commerce Cloud and Docker Tools</h3>
 
   <p align="center">
-    This project contains scripts and configurations for making it easier to work with Adobe's Commerce Cloud servers and Magento docker local environments. 
+    This project contains scripts and configurations for making it easier to work with Adobe's Commerce Cloud servers and Magento docker local environments. This is what I use personally and I hope you find them useful. 
     <br />
     <a href="https://github.com/carlos-reynosa/adobe-commerce-cloud-and-docker-tools"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/carlos-reynosa/adobe-commerce-cloud-and-docker-tools">View Demo</a>
-    ·
     <a href="https://github.com/carlos-reynosa/adobe-commerce-cloud-and-docker-tools/issues">Report Bug</a>
     ·
     <a href="https://github.com/carlos-reynosa/adobe-commerce-cloud-and-docker-tools/issues">Request Feature</a>
@@ -61,7 +59,6 @@
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
 </details>
 
@@ -117,6 +114,8 @@ This project is a combination of tools and scripts for working with [Magento/Ado
 
 The requirements for configuring the project will vary depending on if you just want to work with remote Magento Cloud
 environments or if your also trying to create a local Magento Docker environment based on a Magento Cloud environment. 
+The following instructions will assume that you will both want to use docker for local development and work with remote environments at the same
+time. This project has only been tested within linux environments. 
 
 ### Installation
 
@@ -124,10 +123,15 @@ environments or if your also trying to create a local Magento Docker environment
    ```sh
    git clone https://github.com/carlos-reynosa/adobe-commerce-cloud-and-docker-tools.git
    ```
-2. Setup the project configuration file by providing values to connect to the remote Magento Commerce Cloud Project and code
+2. Setup the project configuration file by providing values to connect to the remote Magento Commerce Cloud Project and code. See the next section for variable meanings. 
    ```sh
    cp project.ini.dist project.ini
    ```
+3. Make sure you have a file in this project directory ./project.ini that contains all your cloud and local development values 
+4. Install the magento-cloud client tool using [the instructions on their website](https://devdocs.magento.com/cloud/reference/cli-ref-topic.html). 
+5. Make sure you have docker installed within your local environment according to [Adobe's instructions on their website](https://devdocs.magento.com/cloud/docker/docker-development.html). 
+6. Run the local environment validation script to check if you have the project set up for working with Magento Cloud and the Magento Docker project locally. 
+   - ```bin/docker/local-environment/validation-test```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -282,19 +286,6 @@ Carlos Reynosa - [@carlos_reynosa](https://twitter.com/carlos_reynosa)
 Project Link: [https://github.com/carlos-reynosa/adobe-commerce-cloud-and-docker-tools](https://github.com/carlos-reynosa/adobe-commerce-cloud-and-docker-tools)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
-
-
-
-<!-- ACKNOWLEDGMENTS -->
-## Acknowledgments
-
-* []()
-* []()
-* []()
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
