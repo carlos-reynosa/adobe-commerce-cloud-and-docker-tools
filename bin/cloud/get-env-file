@@ -403,6 +403,16 @@ fi
 source ./bin/lib/ini_val.sh
 local CONFIG_SOURCE_DIR_NAME=$(ini_val ./project.ini default.SOURCE_DIRECTORY_NAME)
 debug "Config Project Source Directory: ${CONFIG_SOURCE_DIR_NAME}"
+local MAGENTO_CLOUD_PROJECT_ID=$(ini_val ./project.ini default.PROJECT_ID)
+
+#If defined used the environment project id, if not then ask for the id while commands run.
+if [[ "${MAGENTO_CLOUD_PROJECT_ID:-}" ]]; then
+    info "Using environment Magento Cloud Project ID"
+    debug "Magento Cloud Project ID: ${MAGENTO_CLOUD_PROJECT_ID}"
+    local projectId="${MAGENTO_CLOUD_PROJECT_ID}"
+else
+  info "No Magento Cloud Project ID defined, will ask while running commands"
+fi
 
 if [[ -n "${arg_e:-}" ]]; then
   local environment="${arg_e}"
@@ -414,7 +424,7 @@ fi
 cd ${CONFIG_SOURCE_DIR_NAME}
 notice "Overriding local env.php file from environment ${environment} to epp/etc/env.php"
 
-magento-cloud ssh --environment=${environment} "cat app/etc/env.php" > app/etc/env.php
+magento-cloud ssh --project ${projectId} --environment=${environment}  "cat app/etc/env.php" > app/etc/env.php
 
 warning "Remember to run bin/build-compose to include environment settings!!"
 }

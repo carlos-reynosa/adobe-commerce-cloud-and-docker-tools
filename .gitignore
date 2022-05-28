@@ -1,0 +1,8 @@
+*
+!project.ini.dist
+!/bin
+!/templates
+!.gitignore
+!CHANGELOG.md
+!README.md
+!LICENSE.txt
